@@ -1,6 +1,6 @@
 import allure
 import pytest
-from appium.options.android import UiAutomator2Options
+from appium.options.ios import XCUITestOptions
 from appium import webdriver
 from selene import browser
 import config
@@ -8,11 +8,11 @@ from utils import attach
 
 
 @pytest.fixture(scope='function')
-def mobile_management_android():
-    options = UiAutomator2Options().load_capabilities(
+def mobile_management_ios():
+    options = XCUITestOptions().load_capabilities(
         {
-            'platformVersion': config.settings.platformVersion_android,
-            'deviceName': config.settings.deviceName_android,
+            'platformVersion': config.settings.platformVersion_ios,
+            'deviceName': config.settings.deviceName_ios,
             'app': config.settings.app,
             'bstack:options': {
                 "projectName": "First Python project",

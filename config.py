@@ -11,8 +11,10 @@ class Settings(pydantic.BaseModel):
     ACCESS_KEY: str = os.environ.get('ACCESS_KEY')
     remote_url: str = os.environ.get('REMOTE_URL')
 
-    deviceName: str = 'Samsung Galaxy S23'
-    platformVersion: str = '13.0'
+    deviceName_android: str = 'Samsung Galaxy S23'
+    platformVersion_android: str = '13.0'
+    deviceName_ios: str = 'iPhone 12'
+    platformVersion_ios: str = '17'
     app: str = 'bs://sample.app'
     timeout: float = 10.0
 
