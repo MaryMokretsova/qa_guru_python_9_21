@@ -6,3 +6,8 @@
 - Адаптировать conftest.py для работы с двумя типами платформ - Android, iOS
 - Вынести данные (логин, пароль, урл браузерстека и т.д.) в .env с pydantic
 - Сделать сборку в дженкинсе
+
+
+
+1. Сборка - https://jenkins.autotests.cloud/job/C09-MaryMokretsova-unit21/
+2. Аллюр-отчет - https://jenkins.autotests.cloud/job/C09-MaryMokretsova-unit21/2/allure/
